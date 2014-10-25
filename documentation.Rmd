@@ -1,0 +1,22 @@
+---
+title: "MPGproject Documentation"
+author: "Miadad Rashid"
+date: "Saturday, October 25, 2014"
+output: html_document
+---
+
+### Background
+
+The idea for the project came from simply calculating fuel efficieny with a prediction algorithm.  The choice in data set was random.
+
+### Sources
+
+The dataset was derived from the Auto Dataset in the ISLR Package found [here](http://cran.r-project.org/web/packages/ISLR/index.html)
+
+### Developement Process
+
+I simply took the first 6 columns of the dataset which included the mpg, cylinders, displacement, horsepower, weight, and acceleration.  From that subset I fitted a randomforest algorithm.  The positions of the sliders will have 5 new variables for the fitted model to predict.
+
+### To Use
+
+Simply wait the first time for about a minute.  At this time the app is creating the fitted model.  After that, simply adjust the sliders to the desired values and the app will automatically try and predict the MPG efficiency.
