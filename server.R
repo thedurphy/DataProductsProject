@@ -1,8 +1,10 @@
 library(ISLR)
 library(caret)
+library(ggplot2)
+library(randomForest)
 data(Auto)
-data <- Auto[,1:6]
-fit <- train(mpg~., method = 'rf', data = data)
+Auto <- Auto[,1:6]
+fit <- train(mpg~., method = 'rf', data = Auto)
 
 shinyServer(
         function(input, output) {
