@@ -12,6 +12,7 @@ shinyUI(pageWithSidebar(
                 h5('As gas prices are soaring, it is even more important to get the most out of the gas you buy.  This handy app will take the following attributes of your automobile and output you miles-per-gallon.  You can also play around with sliders to see what attribute can contribute the most in getting the most out of your vehicle.'),
                 h4('Miles Per Gallon'),
                 verbatimTextOutput("prediction"),
-                h6('Please give the app at least a minute the first time.  It is running a prediction algorithm which will take a bit.')
+                h6('Please give the app at least a minute the first time.  It is running a prediction algorithm which will take a bit.'),
+                p("Documentation:",a("MPG App",href="documentation.html"))
                 )
         ))
